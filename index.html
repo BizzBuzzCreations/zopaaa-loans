@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>zopaaa-loans</title>
+<meta name="description" content="Apply for a zopaaa-loans personal loan from £1,000 to £25,000. Get a personalised quote in 60 seconds with no impact on your credit score. Representative APR 9.9%.">
+<meta name="keywords" content="personal loans, loan calculator, low APR loans, debt consolidation, home improvement loan, UK loans">
+<meta name="author" content="zopaaa-loans Financial Services Ltd">
+<link rel="canonical" href="https://www.zopaaa-loans.co.uk/index.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="zopaaa-loans | Smarter Personal Loans">
+<meta property="og:description" content="Fast, fair personal loans from £1,000 to £25,000. Check your rate in 60 seconds with no impact on your credit score.">
+<meta property="og:image" content="assets/images/og-cover.svg">
+<meta property="og:url" content="https://www.zopaaa-loans.co.uk/index.html">
+<meta property="og:site_name" content="zopaaa-loans">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="zopaaa-loans | Smarter Personal Loans">
+<meta name="twitter:description" content="Fast, fair personal loans from £1,000 to £25,000. Representative APR 9.9%.">
+<meta name="twitter:image" content="assets/images/og-cover.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#606C38">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "zopaaa-loans Financial Services Ltd",
+  "url": "https://www.zopaaa-loans.co.uk/",
+  "logo": "https://www.zopaaa-loans.co.uk/assets/icons/favicon.svg",
+  "description": "zopaaa-loans offers personal loans from £1,000 to £25,000 with representative APR 9.9%.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Ledger Court",
+    "addressLocality": "Manchester",
+    "postalCode": "M1 4AB",
+    "addressCountry": "GB"
+  },
+  "telephone": "+44-800-123-4567",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "12480"
+  }
+}
+</script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main id="main">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero">
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-copy" data-reveal="up">
+        <h1 id="heroHeadline" data-typing='["your kitchen renovation.","your dream wedding.","a new car.","debt consolidation.","life’s next chapter."]'>
+          A personal loan built around <br class="hide-mobile">
+        </h1>
+        <p class="lede">Borrow from £1,000 to £25,000 with a rate that's personal to you. Check your eligibility in 60 seconds — it won't affect your credit score.</p>
+        <div class="hero-actions">
+          <a href="loans.html#apply" class="btn btn-primary btn-lg">
+            Get my rate
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="how-it-works.html" class="btn btn-outline btn-lg">How it works</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal="zoom">
+        <div class="hero-card" id="homeCalculator">
+          <div class="hero-card-header">
+            <h3>Quick quote</h3>
+          </div>
+          <div class="slider-group">
+            <div class="slider-label"><span>I want to borrow</span><span class="slider-value" id="hcAmountValue">£7,500</span></div>
+            <input type="range" id="hcAmount" min="1000" max="25000" step="100" value="7500" aria-label="Loan amount">
+            <div class="slider-scale"><span>£1,000</span><span>£25,000</span></div>
+          </div>
+          <div class="slider-group">
+            <div class="slider-label"><span>Over</span><span class="slider-value" id="hcTermValue">48 months</span></div>
+            <input type="range" id="hcTerm" min="12" max="84" step="1" value="48" aria-label="Loan term in months">
+            <div class="slider-scale"><span>12 months</span><span>84 months</span></div>
+          </div>
+          <div class="hero-amount-display">
+            <span id="hcMonthly">£0.00</span><span> / month</span>
+          </div>
+          <p class="apr-note">Representative <span id="hcApr">9.9</span>% APR. Estimated total repayable <strong id="hcTotal">£0.00</strong>, including <span id="hcInterest">£0.00</span> interest. Rates from 7.9% to 29.9% APR depending on circumstances.</p>
+          <br>
+          <a href="loans.html#apply" class="btn btn-primary btn-block">Apply now — no credit impact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-stats-strip">
+        <div class="hero-stat" data-reveal="up"><div class="num" data-counter="57640" data-suffix="+">0</div><div class="label">Loans approved</div></div>
+        <div class="hero-stat" data-reveal="up"><div class="num" data-counter="99" data-suffix="%">0</div><div class="label">Online approval rate</div></div>
+        <div class="hero-stat" data-reveal="up"><div class="num" data-counter="60" data-suffix=" sec">0</div><div class="label">Average decision time</div></div>
+        <div class="hero-stat" data-reveal="up"><div class="num" data-counter="15" data-suffix=" yrs">0</div><div class="label">Lending experience</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= TRUSTED BY ============================= -->
+  <section class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-head" data-reveal="fade">
+        <span class="eyebrow">Trusted &amp; secure</span>
+        <h2 class="h3">Backed by ratings customers actually trust</h2>
+      </div>
+      <div class="grid grid-3" style="margin-bottom: var(--space-8);">
+        <div class="card" data-reveal="up">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p style="margin:var(--space-3) 0; color:var(--text-primary); font-weight:600;">"Application took ten minutes and the money was in my account the next morning. Genuinely painless."</p>
+          <span style="font-size:0.85rem;color:var(--text-secondary)">Priya N. &middot; Trustscore review</span>
+        </div>
+        <div class="card" data-reveal="up">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p style="margin:var(--space-3) 0; color:var(--text-primary); font-weight:600;">"Clear numbers from the start — no surprise fees buried in the small print. Exactly what I needed."</p>
+          <span style="font-size:0.85rem;color:var(--text-secondary)">Daniel F. &middot; Trustscore review</span>
+        </div>
+        <div class="card" data-reveal="up">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p style="margin:var(--space-3) 0; color:var(--text-primary); font-weight:600;">"Consolidated three cards into one simple payment. My monthly outgoings dropped immediately."</p>
+          <span style="font-size:0.85rem;color:var(--text-secondary)">Marcus O. &middot; Trustscore review</span>
+        </div>
+      </div>
+      <div class="marquee-wrap" data-reveal="fade">
+        <div class="marquee-track">
+          <span class="trust-strip">
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6.5V11c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6.5L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>FCA Authorised</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg>256-bit Encryption</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 2.4 7.2H22l-6 4.4 2.3 7.1L12 16.3l-6.3 4.4 2.3-7.1-6-4.4h7.6L12 2Z"/></svg>Fintech Awards Winner 2025</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 12.5 11 15l4-6"/></svg>Cyber Essentials Certified</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v4H4zM4 12h16M4 16h10M4 20h16"/></svg>Which? Recommended Provider</span>
+          </span>
+          <span class="trust-strip" aria-hidden="true">
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6.5V11c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6.5L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>FCA Authorised</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg>256-bit Encryption</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 2.4 7.2H22l-6 4.4 2.3 7.1L12 16.3l-6.3 4.4 2.3-7.1-6-4.4h7.6L12 2Z"/></svg>Fintech Awards Winner 2025</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 12.5 11 15l4-6"/></svg>Cyber Essentials Certified</span>
+            <span class="badge-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v4H4zM4 12h16M4 16h10M4 20h16"/></svg>Which? Recommended Provider</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= WHY CHOOSE US ============================= -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-head" data-reveal="fade">
+        <span class="eyebrow">Why zopaaa-loans</span>
+        <h2 class="h2">Loans designed to feel <span class="text-gradient">refreshingly simple</span></h2>
+        <p>We stripped away the jargon and hidden costs that make borrowing stressful. Here's what you get every time.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div><h3>Fast approval</h3><p>Get a decision in as little as 60 seconds and funds the next working day.</p></div>
+        <div class="card"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l2-6 4 8 3-11 2 5h5"/></svg></div><h3>Low, fair APR</h3><p>Representative 9.9% APR — competitive rates without penalising new customers.</p></div>
+        <div class="card"><div class="icon-tile accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16M8 15l3-4 3 3 4-6"/></svg></div><h3>No hidden fees</h3><p>The number you see is the number you pay. No arrangement or early exit fees.</p></div>
+        <div class="card"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 12a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4M4 12a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4"/></svg></div><h3>Flexible repayments</h3><p>Choose a term from 12 to 84 months and adjust as your circumstances change.</p></div>
+        <div class="card"><div class="icon-tile accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12.5 11 15l4-6"/></svg></div><h3>Instant eligibility check</h3><p>See if you qualify with a soft search that never affects your credit score.</p></div>
+        <div class="card"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5V11c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6.5L12 3Z"/></svg></div><h3>Bank-grade security</h3><p>256-bit encryption and continuous fraud monitoring protect every application.</p></div>
+        <div class="card"><div class="icon-tile accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4A8.6 8.6 0 0 1 8 19l-4.5 1 1.3-4A8.4 8.4 0 1 1 21 11.5Z"/></svg></div><h3>Real human support</h3><p>Speak to our UK-based team seven days a week — no chatbots in disguise.</p></div>
+        <div class="card"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-6"/></svg></div><h3>Transparent tracking</h3><p>Track your application and repayments anytime from your online account.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= HOW IT WORKS ============================= -->
+  <section class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-head" data-reveal="fade">
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2">From application to funds in <span class="text-gradient">four simple steps</span></h2>
+      </div>
+      <div class="steps-row">
+        <div class="step-card" data-reveal="up"><div class="step-connector"></div><div class="step-num">1</div><h3>Check eligibility</h3><p>Answer a few quick questions for an instant, no-obligation eligibility check.</p></div>
+        <div class="step-card" data-reveal="up"><div class="step-connector"></div><div class="step-num">2</div><h3>Choose your amount</h3><p>Use our slider to pick the amount and term that fits your budget.</p></div>
+        <div class="step-card" data-reveal="up"><div class="step-connector"></div><div class="step-num">3</div><h3>Apply online</h3><p>Complete your secure application in minutes — no paperwork required.</p></div>
+        <div class="step-card" data-reveal="up"><div class="step-num">4</div><h3>Receive your money</h3><p>Once approved, funds are typically sent the next working day.</p></div>
+      </div>
+      <div class="flex-center" style="margin-top:var(--space-8)">
+        <a href="how-it-works.html" class="btn btn-outline">See the full process <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= LOAN CALCULATOR TEASER ============================= -->
+  <section class="section-pad">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div data-reveal="left">
+        <span class="eyebrow">Loan calculator</span>
+        <h2 class="h2">See exactly what you'll repay — before you apply</h2>
+        <p class="section-lede">Our advanced calculator models your monthly EMI, total interest, processing fees and even lets you add extra repayments to see how much faster you could be debt-free.</p>
+        <ul style="margin:var(--space-6) 0; display:flex; flex-direction:column; gap:0.9rem;">
+          <li style="display:flex;gap:0.6rem;align-items:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#606C38" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Live monthly repayment estimate</li>
+          <li style="display:flex;gap:0.6rem;align-items:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#606C38" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Full interest &amp; amortisation breakdown</li>
+          <li style="display:flex;gap:0.6rem;align-items:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#606C38" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> Model extra payments &amp; early payoff</li>
+        </ul>
+        <a href="calculator.html" class="btn btn-primary">Open full calculator</a>
+      </div>
+      <div class="calc-panel" data-reveal="right">
+        <div class="calc-headline">
+          <div class="sub">Example: £12,000 over 60 months</div>
+          <div class="amount">£252.14<span style="font-size:1rem;color:var(--text-secondary)">/mo</span></div>
+        </div>
+        <div class="calc-results">
+          <div class="calc-result-row"><span class="rlabel">Total interest</span><span class="rvalue">£3,128.40</span></div>
+          <div class="calc-result-row"><span class="rlabel">Total repayable</span><span class="rvalue">£15,128.40</span></div>
+          <div class="calc-result-row"><span class="rlabel">Representative APR</span><span class="rvalue">9.9%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= LOAN TYPES ============================= -->
+  <section class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-head" data-reveal="fade">
+        <span class="eyebrow">Loan types</span>
+        <h2 class="h2">One loan. <span class="text-gradient">Many reasons</span> to apply</h2>
+        <p>Whatever you're planning, we tailor the loan to your goal — not the other way round.</p>
+      </div>
+      <div class="grid grid-4" id="loanTypesGrid">
+        <!-- Populated identically to loan-types.html cards (see below), trimmed to first 8 for homepage teaser -->
+      </div>
+      <div class="flex-center" style="margin-top:var(--space-7)">
+        <a href="loan-types.html" class="btn btn-outline">View all loan types</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= ELIGIBILITY ============================= -->
+  <section class="section-pad">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div data-reveal="left">
+        <span class="eyebrow">Eligibility</span>
+        <h2 class="h2">Find out if you qualify — before you apply</h2>
+        <p class="section-lede">Checking your eligibility takes seconds and leaves no mark on your credit file. Here's what we typically look for:</p>
+        <div class="grid grid-2" style="margin-top:var(--space-6)">
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg> Aged 18–75</div>
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Income from £12,000/yr</div>
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg> Employed, self-employed or retired</div>
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6.5V11c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6.5L12 3Z"/></svg> UK resident, 3+ years</div>
+        </div>
+        <a href="how-it-works.html#eligibility" class="btn btn-primary" style="margin-top:var(--space-7)">Check my eligibility</a>
+      </div>
+      <div class="card" data-reveal="right">
+        <h3 style="margin-bottom:var(--space-5)">Documents you may need</h3>
+        <div class="doc-list">
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="2.5"/><path d="M8 17.5c.7-2 2-3 4-3s3.3 1 4 3"/></svg> Passport</div>
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="8" cy="12" r="2"/><path d="M14 10h4M14 14h2"/></svg> Driving licence</div>
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h11l5 5v11H4Z"/><path d="M15 4v5h5M8 13h8M8 17h5"/></svg> Proof of income</div>
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 15h4"/></svg> Bank statement</div>
+          <div class="doc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11 12 4l8 7"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/></svg> Proof of address</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= STATISTICS ============================= -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block"><div class="counter" data-counter="57640" data-suffix="+">0</div><div class="label">Loans approved</div></div>
+        <div class="stat-block"><div class="counter" data-counter="50000" data-suffix="+">0</div><div class="label">Happy customers</div></div>
+        <div class="stat-block"><div class="counter" data-counter="15">0</div><div class="label">Years experience</div></div>
+        <div class="stat-block"><div class="counter" data-counter="99" data-suffix="%">0</div><div class="label">Success rate</div></div>
+        <div class="stat-block"><div class="counter" data-counter="60" data-suffix="s">0</div><div class="label">Avg. approval time</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= BLOG ============================= -->
+  <section class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-head" data-reveal="fade">
+        <span class="eyebrow">Money matters</span>
+        <h2 class="h2">Guides to help you borrow smarter</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card blog-card" data-reveal="up">
+          <div class="thumb" style="background:linear-gradient(135deg,#606C38,#DDA15E)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M3 17h2l2-6 4 8 3-11 2 5h5"/></svg></div>
+          <div class="body">
+            <span class="category">Credit Score</span>
+            <h3>5 habits that quietly boost your credit score</h3>
+            <p>Small, consistent changes can move your score more than one-off fixes. Here's where to start.</p>
+            <div class="meta"><span>6 min read</span><span>&middot;</span><span>Credit Tips</span></div>
+          </div>
+        </article>
+        <article class="card blog-card" data-reveal="up">
+          <div class="thumb" style="background:linear-gradient(135deg,#DDA15E,#EDCFA0)"><svg viewBox="0 0 24 24" fill="none" stroke="#283618" stroke-width="1.4"><path d="M12 3 4 6.5V11c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6.5L12 3Z"/></svg></div>
+          <div class="body">
+            <span class="category">Loan Guides</span>
+            <h3>Personal loan vs. credit card: which wins in 2026?</h3>
+            <p>We break down the true cost of both so you can pick the cheaper way to borrow.</p>
+            <div class="meta"><span>8 min read</span><span>&middot;</span><span>Loan Guides</span></div>
+          </div>
+        </article>
+        <article class="card blog-card" data-reveal="up">
+          <div class="thumb" style="background:linear-gradient(135deg,#BC6C25,#9A5A1E)"><svg viewBox="0 0 24 24" fill="none" stroke="#FEFAE0" stroke-width="1.4"><path d="M4 4v16h16M8 15l3-4 3 3 4-6"/></svg></div>
+          <div class="body">
+            <span class="category">Debt Management</span>
+            <h3>How debt consolidation actually changes your monthly budget</h3>
+            <p>Real numbers on how merging three debts into one can simplify your finances.</p>
+            <div class="meta"><span>7 min read</span><span>&middot;</span><span>Debt Management</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="flex-center" style="margin-top:var(--space-7)">
+        <a href="blog.html" class="btn btn-outline">Read more articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= FAQ ============================= -->
+  <section class="section-pad">
+    <div class="container" style="max-width:820px;">
+      <div class="section-head" data-reveal="fade">
+        <span class="eyebrow">FAQs</span>
+        <h2 class="h2">Answers to common questions</h2>
+      </div>
+      <div data-accordion-group>
+        <div class="accordion-item">
+          <button class="accordion-trigger">What's the difference between representative APR and my rate?<span class="plus"></span></button>
+          <div class="accordion-panel"><div class="accordion-panel-inner">Representative APR is the rate at least 51% of successful applicants receive. Your personal rate depends on your credit history, income and the amount you borrow, and is confirmed before you accept any offer.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">Will checking my eligibility affect my credit score?<span class="plus"></span></button>
+          <div class="accordion-panel"><div class="accordion-panel-inner">No. Our eligibility check uses a soft search that's only visible to you, never to other lenders, and has no impact on your credit score.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">How quickly can I get the money?<span class="plus"></span></button>
+          <div class="accordion-panel"><div class="accordion-panel-inner">Most approved applications are funded the next working day, and some same-day payouts are available for applications approved before 2pm.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">Can I repay my loan early?<span class="plus"></span></button>
+          <div class="accordion-panel"><div class="accordion-panel-inner">Yes, at any time. Early settlement may include a small statutory rebate calculation, but we never charge an exit fee.</div></div>
+        </div>
+      </div>
+      <div class="flex-center" style="margin-top:var(--space-7)">
+        <a href="faq.html" class="btn btn-outline">View all FAQs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= NEWSLETTER ============================= -->
+  <section class="section-pad bg-brand-gradient">
+    <div class="container flex-between" style="flex-wrap:wrap; gap:var(--space-6);">
+      <div data-reveal="left">
+        <h2 class="h3" style="color:#fff;">Get smarter with money</h2>
+        <p style="color:rgba(255,255,255,0.85);">Monthly tips on credit, saving and borrowing — no spam, unsubscribe anytime.</p>
+      </div>
+      <form class="newsletter-form" data-reveal="right" aria-label="Newsletter signup">
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-white">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/calculator.js"></script>
+<script src="assets/js/forms.js"></script>
+<script>
+  
+  (function () {
+    var grid = document.getElementById('loanTypesGrid');
+    if (!grid) return;
+    var types = [
+      { id:'personal', name:'Personal Loan', rate:'From 7.9% APR', desc:'A flexible lump sum for whatever life throws at you.', icon:'<path d="M3 7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><path d="M16 12h3"/>' },
+      { id:'home-improvement', name:'Home Improvement', rate:'From 8.4% APR', desc:'Extend, renovate or upgrade without draining savings.', icon:'<path d="M4 11 12 4l8 7"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/>' },
+      { id:'wedding', name:'Wedding Loan', rate:'From 8.9% APR', desc:'Fund the big day with a repayment plan that fits.', icon:'<path d="M12 20s-7-4.35-9.5-8.8C.7 7.9 2.3 4.5 5.8 4c2-.3 3.7.7 4.7 2.2C11.5 4.7 13.2 3.7 15.2 4c3.5.5 5.1 3.9 3.3 7.2C19 15.65 12 20 12 20Z"/>' },
+      { id:'car', name:'Car Loan', rate:'From 7.9% APR', desc:'Drive away sooner with fixed monthly repayments.', icon:'<path d="M4 16V9.5a2 2 0 0 1 1.2-1.8L7 7l1.2-2.4A2 2 0 0 1 10 3.5h4a2 2 0 0 1 1.8 1.1L17 7l1.8.7A2 2 0 0 1 20 9.5V16"/><path d="M4 16h16"/><circle cx="7.5" cy="16.5" r="1.7"/><circle cx="16.5" cy="16.5" r="1.7"/>' },
+      { id:'debt-consolidation', name:'Debt Consolidation', rate:'From 8.9% APR', desc:'Merge multiple debts into one simple monthly payment.', icon:'<path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/>' },
+      { id:'holiday', name:'Holiday Loan', rate:'From 9.4% APR', desc:'Book the trip now, spread the cost over time.', icon:'<circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>' },
+      { id:'medical', name:'Medical Loan', rate:'From 8.9% APR', desc:'Cover treatment or procedures on your own timeline.', icon:'<path d="M12 3v18M3 12h18"/>' },
+      { id:'business', name:'Business Loan', rate:'From 9.9% APR', desc:'Working capital to help your small business grow.', icon:'<path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/>' }
+    ];
+    grid.innerHTML = types.map(function (t) {
+      return '<div class="card loan-type-card" data-reveal="up">' +
+        '<span class="rate-tag">' + t.rate + '</span>' +
+        '<div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + t.icon + '</svg></div>' +
+        '<h3>' + t.name + '</h3><p>' + t.desc + '</p>' +
+        '<a class="apply-link" href="loan-types.html#' + t.id + '">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>' +
+        '</div>';
+    }).join('');
+  })();
+
+  // Testimonial slider
+  (function () {
+    var cards = document.querySelectorAll('#testimonialSlider .testimonial-card');
+    var dots = document.querySelectorAll('#testimonialDots button');
+    if (cards.length === 0) return;
+    var index = 0;
+    function show(i) {
+      cards.forEach(function (c, ci) { c.style.display = ci === i ? 'block' : 'none'; });
+      dots.forEach(function (d, di) { d.classList.toggle('active', di === i); });
+      index = i;
+    }
+    dots.forEach(function (dot, i) { dot.addEventListener('click', function () { show(i); restart(); }); });
+    var timer;
+    function restart() {
+      clearTimeout(timer);
+      timer = setTimeout(function () { show((index + 1) % cards.length); restart(); }, 6000);
+    }
+    show(0);
+    restart();
+  })();
+</script>
+</body>
+</html>

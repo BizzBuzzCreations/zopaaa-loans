@@ -1,0 +1,19 @@
+{
+  "name": "zopaaa-loans Personal Loans",
+  "short_name": "zopaaa-loans",
+  "description": "Personal loans from £1,000 to £25,000 with representative 9.9% APR.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FEFAE0",
+  "theme_color": "#606C38",
+  "lang": "en-GB",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

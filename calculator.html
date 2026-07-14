@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Calculator | Estimate Your Monthly Repayments | zopaaa-loans</title>
+<meta name="description" content="Use zopaaa-loans's advanced loan calculator to estimate your monthly repayment, total interest, fees and full amortisation schedule — instantly, with no sign-up.">
+<link rel="canonical" href="https://www.zopaaa-loans.co.uk/calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Loan Calculator | zopaaa-loans">
+<meta property="og:description" content="Estimate your monthly repayment, total interest and full amortisation schedule instantly.">
+<meta property="og:image" content="assets/images/og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#606C38">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+  .chart-card { padding: var(--space-5); }
+  .chart-card h4 { font-size: 0.95rem; margin-bottom: var(--space-4); }
+  .chart-legend { display:flex; gap:var(--space-4); flex-wrap:wrap; margin-top:var(--space-3); font-size:0.8rem; color:var(--text-secondary); }
+  .chart-legend span { display:flex; align-items:center; gap:0.4rem; }
+  .chart-legend i { width:10px; height:10px; border-radius:3px; display:inline-block; }
+  .input-row-inline { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4); }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Loan Calculator</span></div>
+      <span class="eyebrow">Loan calculator</span>
+      <h1 class="h1">Model your loan down to the last penny</h1>
+      <p class="section-lede" style="margin:0 auto;">Adjust the amount, rate, term, extra payments, fees and insurance to see exactly how they affect your monthly payment and total cost.</p>
+    </div>
+  </section>
+
+  <section class="section-pad" id="fullCalculator">
+    <div class="container">
+      <div class="calc-grid">
+
+        <!-- Inputs -->
+        <div class="calc-panel" data-reveal="left">
+          <h3 style="margin-bottom:var(--space-5)">Loan details</h3>
+
+          <div class="slider-group">
+            <div class="slider-label"><span>Loan amount</span><span class="slider-value" id="calcAmountValue">£10,000</span></div>
+            <input type="range" id="calcAmount" min="1000" max="25000" step="100" value="10000" aria-label="Loan amount">
+            <div class="slider-scale"><span>£1,000</span><span>£25,000</span></div>
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-label"><span>Representative APR</span><span class="slider-value" id="calcAprValue">9.9%</span></div>
+            <input type="range" id="calcApr" min="7.9" max="29.9" step="0.1" value="9.9" aria-label="Annual percentage rate">
+            <div class="slider-scale"><span>7.9%</span><span>29.9%</span></div>
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-label"><span>Loan term</span><span class="slider-value" id="calcTermValue">48 months</span></div>
+            <input type="range" id="calcTerm" min="12" max="84" step="1" value="48" aria-label="Loan term in months">
+            <div class="slider-scale"><span>12</span><span>84</span></div>
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-label"><span>Extra monthly payment</span><span class="slider-value" id="calcExtraValue">£0</span></div>
+            <input type="range" id="calcExtra" min="0" max="500" step="10" value="0" aria-label="Extra monthly payment">
+            <div class="slider-scale"><span>£0</span><span>£500</span></div>
+          </div>
+
+          <div class="input-row-inline">
+            <div class="form-group">
+              <label for="calcFee">Processing fee (%)</label>
+              <input class="form-control" type="number" id="calcFee" min="0" max="10" step="0.1" value="0">
+            </div>
+            <div class="form-group">
+              <label for="calcInsurance">Monthly insurance (£)</label>
+              <input class="form-control" type="number" id="calcInsurance" min="0" max="100" step="1" value="0">
+            </div>
+          </div>
+          <p class="apr-note">This calculator is illustrative. Your actual rate, fees and repayment plan will be confirmed during application and depend on individual circumstances.</p>
+        </div>
+
+        <!-- Results -->
+        <div data-reveal="right">
+          <div class="calc-panel" style="margin-bottom:var(--space-5)">
+            <div class="calc-headline">
+              <div class="sub">Estimated monthly repayment</div>
+              <div class="amount" id="calcMonthlyOut">£0.00</div>
+            </div>
+            <div class="calc-results">
+              <div class="calc-result-row"><span class="rlabel">Total interest</span><span class="rvalue" id="calcInterestOut">£0.00</span></div>
+              <div class="calc-result-row"><span class="rlabel">Processing fee</span><span class="rvalue" id="calcFeeOut">£0.00</span></div>
+              <div class="calc-result-row"><span class="rlabel">Total repayable</span><span class="rvalue" id="calcTotalOut">£0.00</span></div>
+              <div class="calc-result-row"><span class="rlabel">Time to pay off</span><span class="rvalue" id="calcPayoffOut">0m</span></div>
+            </div>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="card chart-card">
+              <h4>Cost breakdown</h4>
+              <canvas id="donutChart" style="width:100%;height:180px;" aria-label="Principal versus interest breakdown chart" role="img"></canvas>
+              <div class="chart-legend">
+                <span><i style="background:var(--color-primary-500)"></i>Principal</span>
+                <span><i style="background:var(--color-accent-500)"></i>Interest</span>
+                <span><i style="background:var(--color-primary-200)"></i>Fees</span>
+              </div>
+            </div>
+            <div class="card chart-card">
+              <h4>Balance over time</h4>
+              <canvas id="balanceChart" style="width:100%;height:180px;" aria-label="Loan balance reduction over time chart" role="img"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-alt">
+    <div class="container">
+      <div class="flex-between" style="margin-bottom:var(--space-6); flex-wrap:wrap; gap:1rem;">
+        <div>
+          <span class="eyebrow">Amortisation</span>
+          <h2 class="h3" style="margin:0">Monthly repayment summary</h2>
+        </div>
+        <button class="btn btn-outline btn-sm" id="amortToggle">Show full schedule</button>
+      </div>
+      <div class="amort-table-wrap" data-reveal="up">
+        <table class="amort-table">
+          <thead><tr><th>Month</th><th>Payment</th><th>Principal</th><th>Interest</th><th>Remaining balance</th></tr></thead>
+          <tbody id="amortBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div data-reveal="left">
+        <span class="eyebrow">Ready to apply?</span>
+        <h2 class="h2">Turn your estimate into a real quote</h2>
+        <p class="section-lede">Checking your eligibility takes 60 seconds and never affects your credit score.</p>
+        <a href="loans.html#apply" class="btn btn-primary btn-lg" style="margin-top:var(--space-5)">Apply now</a>
+      </div>
+      <div class="card" data-reveal="right">
+        <h3>How we calculate your numbers</h3>
+        <p>We use the standard reducing-balance formula lenders use for fixed-rate personal loans: monthly interest is charged only on your remaining balance, so as you repay, more of each instalment goes towards the principal. Adding extra monthly payments accelerates this, reducing your total interest and the time it takes to become debt-free.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/calculator.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

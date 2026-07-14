@@ -1,0 +1,102 @@
+/* ==========================================================================
+   zopaaa-loans — Animations
+   Keyframes + scroll-reveal utility classes (driven by IntersectionObserver
+   in assets/js/animations.js)
+   ========================================================================== */
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+@keyframes float-blob {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-30px, 40px) scale(1.08); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+.float { animation: float-y 5s ease-in-out infinite; }
+.float-delay { animation-delay: 1.2s; }
+
+/* --------------------------------------------------------------------------
+   Scroll reveal system
+   Elements start in the "hidden" state defined by [data-reveal] and receive
+   .revealed once they intersect the viewport (see animations.js)
+   -------------------------------------------------------------------------- */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 800ms var(--ease-out), transform 800ms var(--ease-out);
+  will-change: transform, opacity;
+}
+[data-reveal='up']    { transform: translateY(36px); }
+[data-reveal='down']  { transform: translateY(-36px); }
+[data-reveal='left']  { transform: translateX(48px); }
+[data-reveal='right'] { transform: translateX(-48px); }
+[data-reveal='zoom']  { transform: scale(0.9); }
+[data-reveal='fade']  { transform: none; }
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Stagger children automatically via inline --d custom property set in JS,
+   or via utility classes for manual control */
+[data-reveal].revealed[style*='--d'] { transition-delay: var(--d); }
+
+.stagger > * { transition-delay: calc(var(--i, 0) * 90ms); }
+
+/* --------------------------------------------------------------------------
+   Counter number pop
+   -------------------------------------------------------------------------- */
+.counter-animating { color: var(--color-primary-600); }
+
+/* --------------------------------------------------------------------------
+   Card / icon hover micro-interactions (supplemental to style.css)
+   -------------------------------------------------------------------------- */
+.hover-lift { transition: transform var(--dur-base) var(--ease-out); }
+.hover-lift:hover { transform: translateY(-6px); }
+
+.hover-grow { transition: transform var(--dur-base) var(--ease-spring); }
+.hover-grow:hover { transform: scale(1.05); }
+
+/* Loan calculator live-update pulse */
+@keyframes value-pulse {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.pulse-update { animation: value-pulse 380ms var(--ease-spring); }
+
+/* Typing hero cursor blink already defined in style.css (.type-cursor) */
+
+/* Skeleton / lazy image shimmer */
+.img-skeleton {
+  background: linear-gradient(90deg, var(--bg-surface-alt) 25%, var(--border-color) 37%, var(--bg-surface-alt) 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* Marquee for trust logos */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  gap: var(--space-8);
+  width: max-content;
+  animation: marquee 26s linear infinite;
+}
+.marquee-wrap { overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
+.marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+
+/* Page transition fade for content wrapper on load */
+.reveal-page { animation: fadeIn 500ms var(--ease-out); }
